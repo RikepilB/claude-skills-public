@@ -1,0 +1,11 @@
+# Nothing in this repo is generated or secret — it is markdown meant to be read in a browser.
+# These entries exist only to keep local noise out of a public repo.
+
+.env
+.env.*
+*.local
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
