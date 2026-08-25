@@ -1,6 +1,6 @@
 # claude-skills-public
 
-Five portable Claude skills, plus a prompt template. Plain markdown, no scripts, no dependencies, no install step beyond putting a file in a folder.
+Six portable Claude skills, plus a prompt template. Plain markdown, no scripts, no dependencies, no install step beyond putting a file in a folder.
 
 Built to move between machines that will not let you clone a repo.
 
@@ -56,6 +56,7 @@ Sharing these with teammates: **[`TEAM-SHARING.md`](TEAM-SHARING.md)**.
 | Skill | Say | What it does |
 |---|---|---|
 | [`reportman`](skills/reportman/SKILL.md) | "reportman", "write this up for my manager" | Manager-grade reporting mode. Headline verdict, two or three tight paragraphs, one explicit ask. Semiformal, no filler. Levels: brief / full / deck. |
+| [`worksmith`](skills/worksmith/SKILL.md) | "worksmith", "write a Jira ticket", "message my lead", "this is too long" | Work-artifact writing mode. Jira tickets and comments, Confluence pages and tech specs, chat and async updates. Answer first, one idea per sentence, a hard length cap per artifact type. |
 | [`triage`](skills/triage/SKILL.md) | "triage this", "how bad is this", "what should I fix first" | Turns a bug, a failure, an alert, or a whole queue into classified, deduplicated, routable tickets — severity, priority, owner, one next action. |
 | [`save-context`](skills/save-context/SKILL.md) | "save context", "before I clear", "remember this for next time" | Writes a durable handoff file with a paste-ready resume block, plus durable memories for later sessions and other agents. Redacts secrets first. |
 | [`prompt-forge`](skills/prompt-forge/SKILL.md) | "write me a prompt", "improve this prompt", "prompt for Haiku" | Rough idea in, structured prompt out — eight fixed fields, tuned for the model tier that will run it. Also diagnoses why an existing prompt fails. |
@@ -82,9 +83,12 @@ They compose. A realistic loop:
 
 1. `browser-copilot` keeps a research session bounded — read the tabs you already opened, stop when answered.
 2. `triage` turns what you found into ranked, owned items instead of a pile.
-3. `reportman` writes the update your manager actually reads.
-4. `prompt-forge` builds the reusable prompt for the part you will do again next week.
-5. `save-context` writes the handoff, then you clear the conversation without losing anything.
+3. `worksmith` files those items as tickets, and posts the one-line update in the channel.
+4. `reportman` writes the update your manager actually reads.
+5. `prompt-forge` builds the reusable prompt for the part you will do again next week.
+6. `save-context` writes the handoff, then you clear the conversation without losing anything.
+
+> `reportman` and `worksmith` split on where the writing lands, not on how formal it is. Prose a manager reads end to end is `reportman`. Anything that lives inside a tool — a ticket, a comment, a wiki page, a Slack message — is `worksmith`. Each skill names the other, so they hand off instead of fighting when both are loaded.
 
 ## Design rules
 

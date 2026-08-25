@@ -60,6 +60,7 @@ Final layout either way:
 <target>/
   skills/
     reportman/SKILL.md
+    worksmith/SKILL.md
     triage/SKILL.md
     save-context/SKILL.md
     prompt-forge/SKILL.md
@@ -77,6 +78,7 @@ Do not trust the file being on disk. Start a **new** session and test the trigge
 | Skill | Say this | Expect |
 |---|---|---|
 | `reportman` | "reportman — write up that the staging deploy is blocked on a missing key" | Bold headline, two or three short paragraphs, a bold `**Ask:**` line |
+| `worksmith` | "write a Jira ticket: search results drop after page 3" | A `Summary / Why / Done when` ticket, 12 lines or fewer, no `N/A` sections |
 | `triage` | "triage this: intermittent 500s on /checkout, started after yesterday's deploy" | A `SEV / PRI` block with `STATUS`, `OWNER`, `NEXT` |
 | `save-context` | "save context" | Offers to write a handoff file, and tells you it cannot clear the conversation itself |
 | `prompt-forge` | "turn this into a prompt: summarize meeting notes" | A fenced prompt with `CONTEXT / TASK / INPUT / OUTPUT / TONE / REASONING / SPEED / STOP` |
