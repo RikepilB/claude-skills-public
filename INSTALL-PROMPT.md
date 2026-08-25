@@ -74,7 +74,7 @@ CONTENT:
 
 ## Route 3 — one skill only
 
-Grab a single file. Same idea, shorter. Replace `<name>` with `reportman`, `triage`, `save-context`, `prompt-forge`, or `browser-copilot`:
+Grab a single file. Same idea, shorter. Replace `<name>` with `reportman`, `worksmith`, `triage`, `save-context`, `prompt-forge`, or `browser-copilot`:
 
 ```
 https://raw.githubusercontent.com/RikepilB/claude-skills-public/main/skills/<name>/SKILL.md
@@ -134,6 +134,7 @@ Then type any one of these:
 | Type this | Expect |
 |---|---|
 | `reportman — write up that the staging deploy is blocked on a missing key` | Bold headline, 2–3 short paragraphs, a bold `**Ask:**` line |
+| `write a Jira ticket: search results drop after page 3` | A `Summary / Why / Done when` ticket, 12 lines or fewer, no `N/A` sections |
 | `triage this: intermittent 500s on /checkout since yesterday's deploy` | A `SEV / PRI` block with `STATUS`, `OWNER`, `NEXT` |
 | `save context` | Offers to write a handoff file; says plainly it cannot clear the conversation itself |
 | `turn this into a prompt: summarize meeting notes` | Fenced prompt with `CONTEXT / TASK / INPUT / OUTPUT / TONE / REASONING / SPEED / STOP` |
