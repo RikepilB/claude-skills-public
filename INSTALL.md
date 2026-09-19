@@ -65,6 +65,10 @@ Final layout either way:
     save-context/SKILL.md
     prompt-forge/SKILL.md
     browser-copilot/SKILL.md
+    design-intent/SKILL.md
+    accessible-ui-styling/SKILL.md
+    anti-slop-review/SKILL.md
+    debug-evidence-loop/SKILL.md
 ```
 
 One folder per skill. The folder name should match the `name:` in the frontmatter.

@@ -74,7 +74,7 @@ CONTENT:
 
 ## Route 3 — one skill only
 
-Grab a single file. Same idea, shorter. Replace `<name>` with `reportman`, `worksmith`, `triage`, `save-context`, `prompt-forge`, or `browser-copilot`:
+Grab a single file. Same idea, shorter. Replace `<name>` with `reportman`, `worksmith`, `triage`, `save-context`, `prompt-forge`, `browser-copilot`, `design-intent`, `accessible-ui-styling`, `anti-slop-review`, or `debug-evidence-loop`:
 
 ```
 https://raw.githubusercontent.com/RikepilB/claude-skills-public/main/skills/<name>/SKILL.md
